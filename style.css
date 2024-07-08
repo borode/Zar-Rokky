@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     border:0;
+    font-family: 'montserrat',sans-serif;
 }
 *,*:before,*:after{
     box-sizing: border-box;
@@ -22,6 +23,7 @@ html,body{
     ms-text-size-adjust: 100%;
     moz-text-size-adjust: 100%;
     webkit-text-size-adjust: 100%;
+    overflow-x:hidden;
 }
 input,textarea,select{font-family:inherit;}
 input::-ms-clear{display: none;}
@@ -50,12 +52,12 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:400;}
 }
 :root{
     --font-family-base: 'montserrat',sans-serif;
-    --font-family-accent: 'roboto',sans-serif;
 }
 body{
     width: 100%;
     height: 100%;
     padding: 80px 0  0 0 ;
+
 }
 a{
     color: #FFFFFF;
@@ -213,18 +215,32 @@ a{
     position: relative;
 
 }
+.background_phone_gradient{
+    position: absolute;
+    background: linear-gradient(180deg, rgba(167, 47, 114, 0.7) 0%, rgba(255, 106, 106, 0) 100%);
+    width: 450px;
+    height: 450px;
+    z-index: 5;
+    border-radius: 50%;
+    display: none;
+
+}
 .background_phone{
     position: absolute;
-    width: 500px;
-    min-height: 350px;
-    z-index: 4;
+    width: calc(175px + 300*(100vw/1200));
+    height: calc(152px + 500*(100vw/1200));
+    max-width: 500px;
+    max-height: 700px;
+    z-index: 6;
     right: 0;
 
 }
 .background_e{
     position: absolute;
-    width: 500px;
-    min-height: 350px;
+    width: calc(175px + 300*(100vw/1200));
+    height: calc(152px + 500*(100vw/1200));
+    max-width: 500px;
+    max-height: 700px;
     z-index: 5;
     right: 0;
     opacity: 3%;
@@ -233,10 +249,11 @@ a{
 
 .main_block_one{
     position: relative;
-    padding: 20px 0 0 0;
+    padding: 90px 0 60px 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: minmax(175px, 500px);
+
 
 }
 
@@ -252,12 +269,15 @@ a{
 .main_text_one_svg {
     color: #FF834E;
     font-weight: 700;
-    font-size: 23px;
+    font-size: calc(12px + 11*(100vw/1200));
     line-height: 28px;
     display: flex;
     column-gap: 10px;
 }
+.main_svg_block_one{
+    width: calc(11px + 8*(100vw/1200));
 
+}
 .main_svg_wrapper{
     display: flex;
     justify-content: center;
@@ -269,7 +289,7 @@ a{
 .main_text_title{
     color: #FFFFFF;
     font-weight: 700;
-    font-size: 52px;
+    font-size: calc(20px + 32*(100vw/1200));
     line-height: 70px;
 
 }
@@ -299,10 +319,13 @@ a{
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    margin: 15px 0  0 0 ;
-
+    gap: 15px;
+    border: 1px solid #FF834E;
+    background-color: #FF834E;
+    flex-wrap: nowrap;
+    margin: 15px 0 0 0;
 }
 
 .main_block_one_button_text{
@@ -310,15 +333,13 @@ a{
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
-    border: 1px solid #FF834E;
-    padding: 18px 60px 18px 18px;
-    background-color: #FF834E;
-    flex-wrap: nowrap;
+    padding: 0 0 0 15px;
+
 }
 
 .main_block_one_button_svg{
     border: 1px solid #FF834E;
-    padding: 21px ;
+    padding: 22px ;
     background: #DE774B;
 }
 
@@ -333,24 +354,75 @@ a{
     .container{
         max-width: 970px;
     }
-    .main_block_one{
-        grid-template-columns: 1fr;
 
+}
+@media (min-width: 1200px) {
+    .main_text_one_svg{
+        font-size: 22px;
     }
+    .main_text_title{
+        font-size: 52px;
+    }
+
 }
 @media (max-width: 992px) {
     .container{
         max-width: 750px;
     }
+    .main_block_one{
+        grid-template-rows: auto  minmax(175px, 500px) auto;
+        grid-template-columns: 1fr;
+        justify-items: center;
 
+
+    }
+    .background_phone{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .background_e{
+        display: none;
+    }
+    .main_text_there{
+        display: none;
+    }
+    .background_phone_gradient{
+        position: absolute;
+        display: block;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .main_block_one_button{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .main_block_one_btn{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 15px;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+    .main_block_one_button_uptext{
+        opacity: 50%;
+    }
+    .main_block_one{
+        padding: 30px 0 30px 0;
+    }
 }
 @media (max-width: 767px) {
     .container{
         max-width: none;
     }
 }
-
-
+ /*svg{*/
+ /*    fill: ;*/
+ /*}*/
 
 
 
