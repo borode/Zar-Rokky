@@ -61,25 +61,11 @@ a{
     color: #FFFFFF;
 }
 
-@media (max-width: 1200px) {
-    .container{
-        max-width: 970px;
-    }
-}
-@media (max-width: 992px) {
-    .container{
-        max-width: 750px;
-    }
-}
-@media (max-width: 767px) {
-    .container{
-        max-width: none;
-    }
-}
+
 .container{
     max-width: 1200px;
     margin: 0 auto;
-
+    padding: 0 20px 0 20px ;
 }
 .header{
     position: fixed;
@@ -112,6 +98,10 @@ a{
     align-items: center;
     column-gap: 10px;
     text-wrap: nowrap;
+
+}
+.header_logo_link{
+    padding: 15px 0 15px 0;
 }
 
 .header_action{
@@ -144,6 +134,7 @@ a{
     font-size: 18px;
     line-height: 23px;
     text-wrap: nowrap;
+    padding: 15px 0 15px 15px;
 }
 .header_btn_number:hover{
     color: #FF834E;
@@ -161,32 +152,34 @@ a{
     font-weight:600;
     line-height:17px;
     text-wrap: nowrap;
+    padding: 15px 0 15px 0;
 }
 .header_menu_link:hover{
     color: #FF834E;
     transition: 0.2s;
 }
+.background_wrapper{
 
+
+    min-height: 100%;
+    width: 100%;
+}
 .main_block_one_relative{
     position: relative;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    height: 100%;
+    height: max-content;
+    min-height: 700px;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .background_black{
-    background:url("/img/background_swet.png");
+    background:#161616;
     position: absolute;
-    top: 0;
-    left: 0;
     z-index: 1;
     height: 100%;
     width: 100%;
-    background-repeat: no-repeat;
     background-size: cover;
+
 }
 
 .background_gradient {
@@ -216,36 +209,44 @@ a{
     border-top-right-radius: 450px 300px;
 }
 
+.main_block_one_img-wrapper{
+    position: relative;
+
+}
 .background_phone{
     position: absolute;
     width: 500px;
-    min-height: 50%;
+    min-height: 350px;
     z-index: 4;
-    bottom:-60px;
-    right: 130px;
+    right: 0;
 
 }
 .background_e{
     position: absolute;
     width: 500px;
-    min-height: 50%;
+    min-height: 350px;
     z-index: 5;
-    bottom:35px;
-    right: 100px;
+    right: 0;
     opacity: 3%;
 }
 
 
 .main_block_one{
     position: relative;
-    z-index: 6;
-    padding: 20px 0;
+    padding: 20px 0 0 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+
 }
 
 .main_text_one{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 6;
 }
 
 .main_text_one_svg {
@@ -254,15 +255,15 @@ a{
     font-size: 23px;
     line-height: 28px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 0  0 13px;
+    column-gap: 10px;
 }
 
-.main_text_wrapper{
+.main_svg_wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
 
-
-    z-index: 7;
 }
 
 .main_text_title{
@@ -270,7 +271,7 @@ a{
     font-weight: 700;
     font-size: 52px;
     line-height: 70px;
-    margin: 20px 0 0 0 ;
+
 }
 
 .main_text_there{
@@ -278,11 +279,12 @@ a{
     font-weight: 400;
     font-size: 20px;
     line-height: 27px;
-    margin: 30px 0 0 0 ;
+    margin: 30px 0 0 0;
 }
 .main_block_one_btn{
-
-
+    position: relative;
+    z-index: 7;
+    margin: auto 0  0 0 ;
 
 }
 .main_block_one_button_uptext{
@@ -290,7 +292,7 @@ a{
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
-    margin:400px 0 0 0 ;
+
 }
 .main_block_one_button{
     color: #FFFFFF;
@@ -299,7 +301,7 @@ a{
     line-height: 22px;
     display: flex;
     align-items: center;
-    margin:15px 0 0 0 ;
+    margin: 15px 0  0 0 ;
 
 }
 
@@ -309,18 +311,44 @@ a{
     font-size: 18px;
     line-height: 22px;
     border: 1px solid #FF834E;
-    padding: 18px 90px 18px 18px;
+    padding: 18px 60px 18px 18px;
     background-color: #FF834E;
     flex-wrap: nowrap;
 }
 
 .main_block_one_button_svg{
     border: 1px solid #FF834E;
-    padding: 22px ;
+    padding: 21px ;
     background: #DE774B;
 }
 
 
+
+
+
+
+
+
+@media (max-width: 1200px) {
+    .container{
+        max-width: 970px;
+    }
+    .main_block_one{
+        grid-template-columns: 1fr;
+
+    }
+}
+@media (max-width: 992px) {
+    .container{
+        max-width: 750px;
+    }
+
+}
+@media (max-width: 767px) {
+    .container{
+        max-width: none;
+    }
+}
 
 
 
