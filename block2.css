@@ -1,0 +1,17 @@
+.block_three{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.accordion_content{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+    padding: 0;
+
+}
+.accordion_content--active{
+    max-height: 1000px;
+    transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+}
