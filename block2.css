@@ -1,3 +1,75 @@
+.main_block_two{
+    min-height: 100%;
+    width: 100%;
+}
+
+.main_block_two_title{
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    z-index: 3;
+}
+
+.block_two_background_relative{
+    position: relative;
+    height: max-content;
+    min-height: 1000px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.block_two_background_black{
+    background:#161616;
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}
+
+.block_two_background_gradient{
+    background: url("/img/background_gradient_block_two.png");
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}
+
+.block_two_background_border_svg{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.block_two_background_border{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    z-index: 3;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .block_three{
     display: flex;
     flex-direction: column;

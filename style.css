@@ -120,7 +120,9 @@ a{
     border: 1px solid #FF834E;
     width: 166px;
     height: 47px;
+    display: flex;
     text-align: center;
+    justify-content: center;
     padding: 10px 21px;
     background-color:#202020;
     text-wrap: nowrap;
@@ -228,7 +230,7 @@ a{
 .background_phone{
     position: absolute;
     width: calc(175px + 300*(100vw/1200));
-    height: calc(152px + 500*(100vw/1200));
+    height: calc(150px + 500*(100vw/1200));
     max-width: 500px;
     max-height: 700px;
     z-index: 6;
@@ -333,7 +335,7 @@ a{
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
-    padding: 0 0 0 15px;
+    padding: 10px 60px 10px 20px;
 
 }
 
@@ -342,7 +344,6 @@ a{
     padding: 22px ;
     background: #DE774B;
 }
-
 
 
 
