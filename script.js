@@ -1,4 +1,4 @@
-const container = document.querySelector('.block_three');
+const container = document.querySelector('.block_two_two');
 const items = document.querySelectorAll('.accordion_content');
 container.addEventListener('click', (e) => {
     console.log(e.target);
