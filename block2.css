@@ -1,9 +1,13 @@
 .main_block_two{
+    position: relative;
+    height: max-content;
     min-height: 100%;
     width: 100%;
+    background:#161616;
 }
 
 .main_block_two_title{
+    position: relative;
     color: #FFFFFF;
     font-weight: 400;
     font-size: 14px;
@@ -11,22 +15,11 @@
     z-index: 3;
 }
 
-.block_two_background_relative{
+.container_fon{
     position: relative;
-    height: max-content;
-    min-height: 1000px;
+    max-width: 1920px;
     width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.block_two_background_black{
-    background:#161616;
-    position: absolute;
-    z-index: 1;
-    height: 100%;
-    width: 100%;
-    background-size: cover;
+    margin: 0 auto;
 }
 
 .block_two_background_gradient{
@@ -43,7 +36,7 @@
 
 .block_two_background_border_svg{
     position: relative;
-    height: 100%;
+    min-height: 1000px;
     width: 100%;
 }
 
@@ -51,9 +44,8 @@
     position: absolute;
     top: 50%;
     left: 50%;
-
-    z-index: 3;
-
+    z-index: 4;
+    transform: translate(-50%, -50%);
 }
 
 
@@ -79,11 +71,11 @@
 .accordion_content{
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+    transition: max-height 0.8s ease-out, padding 0.8s ease-out;
     padding: 0;
 
 }
 .accordion_content--active{
-    max-height: 1000px;
-    transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+    max-height: 300px;
+    transition: max-height 0.8s ease-out, padding 0.8s ease-out;
 }
