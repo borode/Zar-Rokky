@@ -175,15 +175,8 @@ a{
     height: max-content;
     min-height: 700px;
     width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.background_black{
     background-color:#161616;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-size: cover;
+    padding: 0  0  30px 0 ;
 }
 
 .background_gradient {
@@ -192,21 +185,22 @@ a{
     background-repeat: no-repeat;
     top: 0;
     left: 0;
-    z-index: 3;
+    z-index: 2;
     height: 100%;
     width: 100%;
     background-size: cover;
+    background-position: center;
     opacity: 1;
-    -webkit-box-shadow: -3px 3px 40px 40px rgba(22, 22, 22, 1) inset;
-    -moz-box-shadow: -3px 3px 40px 40px rgba(22, 22, 22, 1) inset;
-    box-shadow: -3px 3px 40px 40px rgba(22, 22, 22, 1) inset;
+    -webkit-box-shadow: 1px -29px 71px 33px rgba(22, 22, 22, 1) inset;
+    -moz-box-shadow: 1px -29px 71px 33px rgba(22, 22, 22, 1) inset;
+    box-shadow: 1px -29px 71px 33px rgba(22, 22, 22, 1) inset;
 }
 
 .background_code_overlay{
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 2;
+    z-index: 3;
     -webkit-box-shadow: 2px 7px 100px 82px rgba(22, 22, 22, 1) inset;
     -moz-box-shadow: 2px 7px 100px 82px rgba(22, 22, 22, 1) inset;
     box-shadow: 2px 7px 100px 82px rgba(22, 22, 22, 1) inset;
@@ -218,13 +212,14 @@ a{
     position: absolute;
     bottom: 20px;
     left: 0;
-    z-index: 1;
+    z-index: 3;
     max-height: 60%;
     min-height: 40%;
     height: 320px;
     max-width: 60%;
     min-width: 40%;
     width: 800px;
+    opacity: 0.1;
     -webkit-box-shadow: 2px 7px 100px 82px rgba(22, 22, 22, 1);
     -moz-box-shadow: 2px 7px 100px 82px rgba(22, 22, 22, 1);
     box-shadow: 2px 7px 100px 82px rgba(22, 22, 22, 1);
