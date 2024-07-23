@@ -3,16 +3,23 @@
     height: max-content;
     min-height: 100%;
     width: 100%;
-    background:#161616;
+    background: rgba(22, 22, 22, 1);
+    -webkit-box-shadow: -3px 3px 40px 40px rgba(22, 22, 22, 1) inset;
+    -moz-box-shadow: -3px 3px 40px 40px rgba(22, 22, 22, 1) inset;
+    box-shadow: -3px 3px 40px 40px rgba(22, 22, 22, 1) inset;
 }
 
 .main_block_two_title{
     position: relative;
     color: #FFFFFF;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
+    font-size: calc(15px + 11*(100vw/1200));
+    line-height: 32px;
     z-index: 3;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 35px 0 0 0;
 }
 
 .container_fon{
@@ -20,6 +27,7 @@
     max-width: 1920px;
     width: 100%;
     margin: 0 auto;
+
 }
 
 .block_two_background_gradient{
@@ -47,7 +55,7 @@
     z-index: 4;
     transform: translate(-50%, -50%);
 }
-рпропртррвтьро
+
 
 
 
