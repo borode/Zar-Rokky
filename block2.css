@@ -25,7 +25,7 @@
     justify-content: center;
     text-align: center;
     column-gap: 20px;
-
+    padding: 70px 0 0 0;
 }
 
 .container_fon{
@@ -35,7 +35,6 @@
     max-width: 1920px;
     width: 100%;
     transform: translate(-50%, 0);
-
 }
 
 .container_fon2{
@@ -50,7 +49,7 @@
     background-repeat: no-repeat;
     top: 0;
     left: 0;
-    z-index: 2;
+    z-index: 1;
     height: 100%;
     width: 100%;
     background-size: cover;
@@ -64,9 +63,101 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    z-index: 4;
+    z-index: 3;
     transform: translate(-50%, -50%);
 
+}
+
+.block_two_wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,180px);
+    justify-content: center;
+    align-items: center;
+    row-gap: 200px;
+    column-gap: 200px;
+    padding: 110px 0 0 150px;
+}
+.block_two_cards_item_wrapper, .block_two_info_one{
+    position: relative;
+}
+
+
+
+.block_two_cards_item_wrapper:hover .block_two_number{
+    color:  #EF8B54;
+    opacity: 0.9;
+    transition: 0.4s ease-in;
+
+}
+
+.block_two_number{
+    position: absolute;
+    color:  #FFFFFF;
+    opacity: 0.1;
+    font-weight: 700;
+    letter-spacing: 10px;
+    font-size:118px;
+    line-height: 144px;
+    top: -50%;
+    right: -50%;
+    z-index: 4;
+    transition: 0.4s ease-in;
+}
+
+
+.block_two_cards_item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 180px;
+    background: #171718;
+    border-radius: 50%;
+    position: relative;
+    z-index: 7;
+    transition: 0.4s ease-in;
+    opacity: 1;
+
+}
+
+.block_two_cards_item_wrapper path{
+    fill: #EF8B54;
+}
+
+.block_two_cards_item_wrapper:hover path{
+    fill: #171718;
+}
+
+.block_two_cards_item_wrapper svg{
+    fill: #171718;
+    stroke: #EF8B54;
+}
+
+.block_two_cards_item_wrapper:hover svg{
+    fill: #FFFFFF;
+    stroke:#171718 ;
+}
+
+.block_two_cards_item_wrapper:hover .block_two_cards_item {
+    width: 180px;
+    height: 180px;
+    background: #b8b6b6;
+    border-radius: 50%;
+    transition: 0.4s ease-in;
+
+}
+
+
+.block_two_cards_text{
+    position: absolute;
+    text-align: center;
+    margin: 20px 0 0 0;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size:18px;
+    line-height: 22px;
+    max-width: 100%;
+    min-width: 100%;
 }
 
 
@@ -81,9 +172,7 @@
 
 
 
-
-
-
+/*Мобилка*/
 .block_two_two{
     display: flex;
     flex-direction: column;
