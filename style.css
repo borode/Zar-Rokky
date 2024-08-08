@@ -398,6 +398,7 @@ a{
     }
 
 }
+
 @media (max-width: 992px) {
     .container{
         max-width: 750px;
@@ -453,10 +454,7 @@ a{
         max-width: none;
     }
 }
- /*svg{
-     fill: white;
-     stroke: red;
- }*/
+
 
 
 

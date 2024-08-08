@@ -1,4 +1,4 @@
-const container = document.querySelector('.block_two_two');
+const container = document.querySelector('.block_two_mobile');
 const items = document.querySelectorAll('.accordion_content');
 container.addEventListener('click', (e) => {
     console.log(e.target);
@@ -13,17 +13,3 @@ container.addEventListener('click', (e) => {
 })
 
 
-
-// const container_two = document.querySelector('.block_two_cards_text');
-// const container_three = container_two.querySelector('.block_two_cards_text_span');
-// console.log(container_two);
-// container_two.addEventListener("mouseover", function() {
-//     container_three.textContent ='Подробнее'
-// })
-// container_two.addEventListener("mouseout", function() {
-//     container_three.innerHTML ='Анализ Целевой Аудитории <div class="block_two_cards_after"></div>'
-//
-//
-// })
-//
-//
