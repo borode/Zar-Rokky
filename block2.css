@@ -237,19 +237,16 @@
 /*Мобилка*/
 .block_two_mobile{
     background-color: #FFFFFF;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    display: none;
     height: max-content;
     width: 100%;
-    min-width:max-content ;
-    max-width: 990px;
-    top: 0;
+    min-width:700px ;
+    max-width: 100%;
+    top:0;
     left: 0;
     position: relative;
-    padding: 0 0 80px 0;
+    padding: 0 0 30px 0;
 }
+
 
 .block_two_mobile_flex{
     display: flex;
@@ -257,6 +254,7 @@
     justify-content: center;
     flex-direction: column;
     border-left:5px dashed #929292;
+
 }
 
 .main_block_two_title_mobile{
@@ -268,6 +266,7 @@
     align-items: center;
     justify-content: center;
     margin: 40px 20px 40px 20px;
+
 }
 
 .block_two_number_mobile{
@@ -278,6 +277,12 @@
     color:#000000 ;
     margin: 0 10px 0 10px ;
 
+}
+
+.accordion_item{
+    margin: 0 0 0 15px;
+    height: max-content;
+    border-bottom: 2px solid #929292;
 }
 
 .accordion_title{
@@ -314,7 +319,7 @@
     left: 50%;
     top: 50%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
 
 }
@@ -349,19 +354,6 @@
     transition: 0.3s ease-in;
 }
 
-
-
-
-
-.accordion_item{
-    margin: 0 0 0 15px;
-    width: 800px;
-    height: max-content;
-    border-bottom: 2px solid #929292;
-
-
-}
-
 .block_two_number_mobile_none{
     border-bottom:hidden;
 }
@@ -377,9 +369,11 @@
 .accordion_item:hover .accordion_content{
     color:#EF8B54;
 }
-.accordion_title:hover .block_two_mobile_cards_after{
+
+.accordion_item:hover .block_two_mobile_cards_after{
     color:#EF8B54;
 }
+
 .accordion_title:hover .block_two_mobile_cards_after{
     color:#EF8B54;
 }
@@ -405,6 +399,18 @@
 
 
 
+@media (max-width: 1200px) {
+    .block_two_mobile{
+        display: none;
+    }
+
+}
+@media (min-width: 1200px) {
+    .block_two_mobile{
+        display: none;
+    }
+
+}
 
 
 
