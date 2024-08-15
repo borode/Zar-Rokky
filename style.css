@@ -180,17 +180,55 @@ a{
 
 .header_menu_link_burger{
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
+    gap: 5px;
     width: 60px;
     height: 60px;
     border-radius: 50%;
     background-color: rgba(104, 104, 104, 0.4);
 }
 
-.header_menu_link_burger svg{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
+
+
+.header_menu_link_burger_line_one{
+    height: 3px;
+    width: 30px;
+    background-color: #FFFFFF;
+    padding: 2px 2px 2px 2px;
+    border-radius: 10px;
+}
+
+.header_menu_link_burger_line_two{
+    height: 3px;
+    width: 30px;
+    background-color: #FFFFFF;
+    padding: 2px 2px 2px 2px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.header_menu_link_burger_line_three{
+    height: 3px;
+    width: 30px;
+    background-color: #FFFFFF;
+    padding: 2px 2px 2px 2px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.header_menu_link_burger:hover .header_menu_link_burger_line_one{
+    display: none;
+}
+
+.header_menu_link_burger:hover .header_menu_link_burger_line_two{
+    transform: rotate(-45deg) translate(-25%, -20%);
+    left: 6px;
+
+}
+
+.header_menu_link_burger:hover .header_menu_link_burger_line_three{
+    transform: rotate(45deg) translate(-20%, 10%);
+    left: 5px;
 }
 
 
@@ -198,6 +236,13 @@ a{
 
 
 
+
+
+.header_menu_link_burger svg{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
 
 .background_wrapper{
     min-height: 100%;
