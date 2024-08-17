@@ -13,8 +13,7 @@ container.addEventListener('click', (e) => {
 })
 
 const burger = document.querySelector('.header_wrapper');
-const burgerTwo = document.querySelectorAll('.header_menu_burger');
-container.addEventListener('click', (e) => {
+burger.addEventListener('click', (e) => {
     console.log(e.target);
     if (e.target.closest('.header_menu_link_burger')) {
         console.log('click');
@@ -23,5 +22,7 @@ container.addEventListener('click', (e) => {
 
         }
         e.target.nextElementSibling.classList.toggle('header_menu_burger--active');
+
     }
+
 })
