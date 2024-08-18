@@ -197,7 +197,7 @@
 
 .block_two_cards_after:after{
     transform: rotate(90deg) translate(-10%, -20%);
-    left: 20%;
+    left: 3px;
 
 }
 
