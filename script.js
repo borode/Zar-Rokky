@@ -35,14 +35,14 @@ burger.addEventListener('click', (e) => {
 const wrapper = document.querySelector('body');
 wrapper.addEventListener('click', (e) => {
     if (!e.target.closest('.header_menu_link_burger')){
-        console.log('click');
+        // console.log('click');
         if (menu.classList.contains('header_menu_burger--active')&& burger.classList.contains('header_menu_link_burger--active')) {
             menu.classList.remove("header_menu_burger--active");
             burger.classList.remove("header_menu_link_burger--active");
         }
     }
-    // popup window
-    if (!e.target.closest('.block_two_cards_text_span2')){
+    // popup window close
+    if (!e.target.closest('.block_two_cards_text')){
         console.log('click');
         if (popup.classList.contains('block_two_cards_text--active')&&  block.classList.contains('block_two_cards_text_span2_popup--active')) {
             popup.classList.remove("block_two_cards_text--active");
@@ -50,23 +50,33 @@ wrapper.addEventListener('click', (e) => {
         }
     }
 })
-const popup = document.querySelector('.block_two_cards_text');
-const block = document.querySelector('.block_two_cards_text_span2_popup');
-popup .addEventListener('click', (e) => {
-    console.log(e.target);
-    if (e.target.closest('.block_two_cards_text')) {
-        console.log('click');
-        popup.classList.toggle('block_two_cards_text--active');
-        block.classList.toggle('block_two_cards_text_span2_popup--active');
-    }
+// popup window open
+const popup = document.querySelectorAll('.block_two_cards_text');
+popup.forEach((lease) =>
+    lease.addEventListener('click', (e) => {
+        console.log(e.target);
+        if (e.target.closest('.block_two_cards_text')) {
+            console.log('click');
+            lease.classList.toggle('block_two_cards_text--active');
+            const block = lease.querySelector('.block_two_cards_text_span2_popup');
+            block.classList.toggle('block_two_cards_text_span2_popup--active');
+        }
     })
+);
 
 
 
 
 
 
-
+    // .addEventListener('click', (e) => {
+    //     console.log(e.target);
+    //     if (e.target.closest('.block_two_cards_text')) {
+    //         console.log('click');
+    //         popup.classList.toggle('block_two_cards_text--active');
+    //         block.classList.toggle('block_two_cards_text_span2_popup--active');
+    //     }
+    // })
 
 
 
