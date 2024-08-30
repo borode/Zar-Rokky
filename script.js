@@ -1,3 +1,4 @@
+// mob menu accordion
 const container = document.querySelector('.block_two_mobile');
 const items = document.querySelectorAll('.accordion_content');
 container.addEventListener('click', (e) => {
@@ -11,7 +12,7 @@ container.addEventListener('click', (e) => {
         e.target.nextElementSibling.classList.toggle('accordion_content--active');
     }
 })
-
+// burger menu
 const burger = document.querySelector('.header_menu_link_burger');
 const menu = document.querySelector('.header_menu_burger');
 const menuLinks = document.querySelectorAll(".header_menu_link_burger_hidden");
@@ -40,10 +41,25 @@ wrapper.addEventListener('click', (e) => {
             burger.classList.remove("header_menu_link_burger--active");
         }
     }
-
+    // popup window
+    if (!e.target.closest('.block_two_cards_text_span2')){
+        console.log('click');
+        if (popup.classList.contains('block_two_cards_text--active')&&  block.classList.contains('block_two_cards_text_span2_popup--active')) {
+            popup.classList.remove("block_two_cards_text--active");
+            block.classList.remove("block_two_cards_text_span2_popup--active");
+        }
+    }
 })
-
-
+const popup = document.querySelector('.block_two_cards_text');
+const block = document.querySelector('.block_two_cards_text_span2_popup');
+popup .addEventListener('click', (e) => {
+    console.log(e.target);
+    if (e.target.closest('.block_two_cards_text')) {
+        console.log('click');
+        popup.classList.toggle('block_two_cards_text--active');
+        block.classList.toggle('block_two_cards_text_span2_popup--active');
+    }
+    })
 
 
 
