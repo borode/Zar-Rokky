@@ -226,33 +226,45 @@
     display: inline;
 }
 
-.block_two_cards_text_span2_boxshadow{
-    z-index: 45;
+
+
+.block_two_window_overlay{
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 15;
+    backdrop-filter: blur(5px);
 }
 
-.block_two_cards_text_span2_popup{
-    position: absolute;
-    top: 50%;
-    left: calc(50% + 360px);
-    transform: translate(-50%, -50%);
-    background-color: rgba(128, 36, 193, 1);
+.block_two_window_overlay--active{
+    display: flex;
+}
+
+.block_two_window{
+    position: relative;
+    z-index: 16;
     min-width: 800px;
     min-height: 600px;
-    max-height: 800px;
-    max-width: 1000px;
-    border-radius: 15px;
-    display: none;
-    -webkit-box-shadow: 1px 1px 100px 72px rgba(128, 36, 193, 1);
-    -moz-box-shadow: 1px 1px 100px 72px rgba(128, 36, 193, 1);
-    box-shadow: 1px 1px 100px 72px rgba(128, 36, 193, 1);
-    transition: 0.9s ease-in;
+    max-width: 50%;
+    max-height: max-content;
+    border-radius: 20px;
+    background-color:rgba(128, 36, 193, 1);
+    padding: 15px;
+
 }
 
-.block_two_cards_text_span2_popup--active{
-    display: block;
+.popuptext{
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23px;
+    text-align: left;
 }
-
-
 
 /*Мобилка*/
 .block_two_mobile{
