@@ -239,6 +239,7 @@
     align-items: center;
     z-index: 15;
     backdrop-filter: blur(5px);
+
 }
 
 .block_two_window_overlay--active{
@@ -254,8 +255,28 @@
     max-height: max-content;
     border-radius: 20px;
     background-color:rgba(128, 36, 193, 1);
-    padding: 15px;
+    padding: 15px ;
 
+}
+
+.block_two_window:after, .block_two_window:before{
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    content: " ";
+    width: 20px;
+    height: 3px;
+    background: #FFFFFF;
+    border-radius: 5px;
+}
+
+.block_two_window:after{
+    transform: rotate(45deg) translate(10%, -20%);
+    right: 13px;
+}
+
+.block_two_window:before{
+    transform: rotate(-45deg) translate(-10%, -20%);
 }
 
 .popuptext{
@@ -264,6 +285,7 @@
     font-weight: 600;
     line-height: 23px;
     text-align: left;
+    padding: 0 15px 0  0;
 }
 
 /*Мобилка*/
