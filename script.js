@@ -1,6 +1,7 @@
 // mob menu accordion
 const container = document.querySelector('.block_two_mobile');
 const items = document.querySelectorAll('.accordion_content');
+// const svg   = document.querySelector('block_two_mobile_cards_after_vector');
 container.addEventListener('click', (e) => {
     console.log(e.target);
     if (e.target.closest('.accordion_title')) {
@@ -10,7 +11,18 @@ container.addEventListener('click', (e) => {
         }
         e.target.nextElementSibling.classList.toggle('accordion_content--active');
     }
+
 })
+// items.addEventListener('click', (e) => {
+//     console.log(e.target);
+//     if (e.target.classList.contains('block_two_mobile_cards_after_vector')) {
+//         items.classList.remove('accordion_content--active');
+//     }
+// })
+
+
+
+
 // burger menu
 const burger = document.querySelector('.header_menu_link_burger');
 const menu = document.querySelector('.header_menu_burger');
