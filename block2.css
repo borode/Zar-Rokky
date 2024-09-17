@@ -259,25 +259,14 @@
 
 }
 
-.block_two_window:after, .block_two_window:before{
-    position: absolute;
-    top: 15px;
-    right: 10px;
-    content: " ";
-    width: 20px;
-    height: 3px;
-    background: #FFFFFF;
-    border-radius: 5px;
+.block_two_window_x{
+    position: fixed;
+    top: calc(25% + 13px) ;
+    right: 25%;
+    z-index: 16;
+    transition: 0.2s ease-in;
 }
 
-.block_two_window:after{
-    transform: rotate(45deg) translate(10%, -20%);
-    right: 13px;
-}
-
-.block_two_window:before{
-    transform: rotate(-45deg) translate(-10%, -20%);
-}
 
 .popuptext{
     color: #FFFFFF;
@@ -285,7 +274,7 @@
     font-weight: 600;
     line-height: 23px;
     text-align: left;
-    padding: 0 15px 0  0;
+    padding: 0 19px 0  0;
 }
 
 /*Мобилка*/
@@ -451,13 +440,20 @@
 
 
 
-
+@media (max-width: 1400px) {
+    .block_two_window_x{
+        right: calc(20% + 12px);
+    }
+}
 
 @media (max-width: 1200px) {
     .block_two_mobile{
         display: none;
     }
 
+    .block_two_window_x{
+        right: calc(15% + 18px);
+    }
 }
 @media (min-width: 1200px) {
     .block_two_mobile{
@@ -480,6 +476,10 @@
         top:calc(-50% + 20px ) ;
         right: calc(-50% + 20px ) ;
 
+    }
+
+    .block_two_window_x{
+        right: calc(15% - 20px);
     }
 }
 @media (max-width: 992px) {

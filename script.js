@@ -4,7 +4,6 @@ const items = document.querySelectorAll('.accordion_content');
 container.addEventListener('click', (e) => {
     console.log(e.target);
     if (e.target.closest('.accordion_title')) {
-        console.log('click');
         for ( i = 0; i < items.length; i++ ) {
             items[i].classList.remove('accordion_content--active');
 
@@ -19,7 +18,6 @@ const menuLinks = document.querySelectorAll(".header_menu_link_burger_hidden");
 burger.addEventListener('click', (e) => {
     console.log(e.target);
     if (e.target.closest('.header_menu_link_burger')) {
-        console.log('click');
         burger.classList.toggle('header_menu_link_burger--active');
         menu.classList.toggle('header_menu_burger--active');
 
@@ -35,7 +33,6 @@ burger.addEventListener('click', (e) => {
 const wrapper = document.querySelector('body');
 wrapper.addEventListener('click', (e) => {
     if (!e.target.closest('.header_menu_link_burger')){
-        // console.log('click');
         if (menu.classList.contains('header_menu_burger--active')&& burger.classList.contains('header_menu_link_burger--active')) {
             menu.classList.remove("header_menu_burger--active");
             burger.classList.remove("header_menu_link_burger--active");
@@ -65,11 +62,11 @@ overlay.addEventListener('click', (e) => {
     e.stopPropagation()
     if (e.target.classList.contains('block_two_window_overlay')){
         overlay.classList.toggle('block_two_window_overlay--active');
+
     }
-    // if (e.target.classList.contains('block_two_window:after:before ')) {
-    //     console.log('click');
-    //     overlay.classList.toggle('block_two_window_overlay--active');
-    // }
+    if (e.target.classList.contains('block_two_window_x')) {
+        overlay.classList.remove('block_two_window_overlay--active');
+    }
 })
 
 
