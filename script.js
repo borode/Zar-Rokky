@@ -1,7 +1,7 @@
 // mob menu accordion
 const container = document.querySelector('.block_two_mobile');
 const items = document.querySelectorAll('.accordion_content');
-// const svg   = document.querySelector('block_two_mobile_cards_after_vector');
+// const vector = document.querySelector('.block_two_mobile_cards_after');
 container.addEventListener('click', (e) => {
     console.log(e.target);
     if (e.target.closest('.accordion_title')) {
@@ -10,15 +10,17 @@ container.addEventListener('click', (e) => {
 
         }
         e.target.nextElementSibling.classList.toggle('accordion_content--active');
-    }
 
+    }
+    // items.addEventListener('click', (e) => {
+    //     console.log(e.target);
+    //     if (e.target.closest('.block_two_mobile_cards_after_vector')) {
+    //         vector.classList.toggle('block_two_mobile_cards_after_vector--active');
+    //     }
+    //
 })
-// items.addEventListener('click', (e) => {
-//     console.log(e.target);
-//     if (e.target.classList.contains('block_two_mobile_cards_after_vector')) {
-//         items.classList.remove('accordion_content--active');
-//     }
-// })
+
+
 
 
 
@@ -54,7 +56,7 @@ wrapper.addEventListener('click', (e) => {
 })
 // popup window open
 const popup = document.querySelectorAll('.block_two_cards_text');
-const windowpup = document.querySelector('.block_two_window');
+const windowpup = document.querySelector('.block_two_window_text');
 const overlay = document.querySelector('.block_two_window_overlay');
 const popupTexts = [ "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi architecto atque blanditiis, cumque cupiditate error est facere illum, ipsam iste, maxime molestiae non numquam optio recusandae sapiente tempora vel vero vitae voluptates. Aliquid commodi earum eius eos hic ipsum iste nostrum, officia porro quae quaerat, quia quibusdam, tempore unde vero01?"  , "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi architecto atque blanditiis, cumque cupiditate error est facere illum, ipsam iste, maxime molestiae non numquam optio recusandae sapiente tempora vel vero vitae voluptates. Aliquid commodi earum eius eos hic ipsum iste nostrum, officia porro quae quaerat, quia quibusdam, tempore unde vero02?", "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi architecto atque blanditiis, cumque cupiditate error est facere illum, ipsam iste, maxime molestiae non numquam optio recusandae sapiente tempora vel vero vitae voluptates. Aliquid commodi earum eius eos hic ipsum iste nostrum, officia porro quae quaerat, quia quibusdam, tempore unde vero03?" , "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi architecto atque blanditiis, cumque cupiditate error est facere illum, ipsam iste, maxime molestiae non numquam optio recusandae sapiente tempora vel vero vitae voluptates. Aliquid commodi earum eius eos hic ipsum iste nostrum, officia porro quae quaerat, quia quibusdam, tempore unde vero04?" , "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi architecto atque blanditiis, cumque cupiditate error est facere illum, ipsam iste, maxime molestiae non numquam optio recusandae sapiente tempora vel vero vitae voluptates. Aliquid commodi earum eius eos hic ipsum iste nostrum, officia porro quae quaerat, quia quibusdam, tempore unde vero05?" , "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi architecto atque blanditiis, cumque cupiditate error est facere illum, ipsam iste, maxime molestiae non numquam optio recusandae sapiente tempora vel vero vitae voluptates. Aliquid commodi earum eius eos hic ipsum iste nostrum, officia porro quae quaerat, quia quibusdam, tempore unde vero06?" ]
 popup.forEach((lease, index ) =>
@@ -66,6 +68,9 @@ popup.forEach((lease, index ) =>
             overlay.classList.toggle('block_two_window_overlay--active');
 
         }
+
+
+
     })
 );
 // popup window close
