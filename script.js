@@ -12,12 +12,7 @@ container.addEventListener('click', (e) => {
         e.target.nextElementSibling.classList.toggle('accordion_content--active');
 
     }
-    // items.addEventListener('click', (e) => {
-    //     console.log(e.target);
-    //     if (e.target.closest('.block_two_mobile_cards_after_vector')) {
-    //         vector.classList.toggle('block_two_mobile_cards_after_vector--active');
-    //     }
-    //
+
 })
 
 
