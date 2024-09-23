@@ -70,7 +70,13 @@
     display: flex;
     justify-content:center ;
     align-items: center;
-;
+    opacity: 0.5;
+}
+
+.block_three_cards_wrapper:hover{
+    opacity: 1;
+    transition: 0.4s ease-in;
+
 }
 
 .block_three_image{
@@ -104,42 +110,50 @@
     text-wrap: nowrap;
 }
 
-/*.block_three_button{*/
-
-/*    z-index: 5;*/
-/*    position: absolute;*/
-/*    top: 50%;*/
-/*    left: 50%;*/
-/*    transform: translate(-50%, 0);*/
-/*}*/
+.block_three_button{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    z-index: 6;
+    gap: -10px;
 
 
+}
 
-/*.block_three_button_text{*/
-/*    color: #FFFFFF;*/
-/*    font-size:calc(8px + 5*(100vw/1200));*/
-/*    line-height: 30;*/
-/*    font-weight:400;*/
-/*    text-wrap: nowrap;*/
-/*    background-color: rgba(80, 56, 111, 1) ;*/
-/*    padding: 20px 80px 20px 30px;*/
-/*    top: -50px;*/
-/*    !*position: absolute;*!*/
-/*    !*background-size:cover ;*!*/
-/*}*/
+.block_three_button_text{
+    color: #FFFFFF;
+    font-size:calc(8px + 5*(100vw/1200));
+    line-height: 30;
+    font-weight:400;
+    text-wrap: nowrap;
+    background-color: rgba(94, 56, 158, 0.35) ;
+    padding: 20px 80px 20px 30px;
+}
 
-/*.block_three_button_vector{*/
-/*    color: #FFFFFF;*/
-/*    font-size:calc(8px + 5*(100vw/1200));*/
-/*    line-height: 22;*/
-/*    font-weight:400;*/
-/*    background-color: rgba(94, 56, 158, 0.35) ;*/
-/*    padding: 20px 60px 20px 25px;*/
-/*    !*position: absolute;*!*/
-/*}*/
+.block_three_button_vector{
+    position: relative;
+    color: #FFFFFF;
+    font-size:calc(8px + 5*(100vw/1200));
+    line-height: 22;
+    font-weight:400;
+    background-color: rgba(80, 56, 111, 1) ;
+    padding: 20px 60px 20px 25px;
+    left: -20px;
+}
+
+.block_three_button_type{
+    position: absolute;
+    top: 24px;
+    right: 20px;
+
+}
 
 
 @media (max-width: 992px) {
+    .main_block_three{
+        padding: 20px 0 0 0;
+    }
+
     .main_block_three_title{
         padding: 40px 0 40px 0;
     }
@@ -147,13 +161,13 @@
 
     .block_three_wrapper{
         display: grid;
-        grid-template-columns: 500px;
+        grid-template-columns: 400px;
         gap: calc(30px + 10*(100vw/1200));
         padding: 0 20px 70px 20px;
     }
 
     .block_three_image{
-        width: calc(300px + 200*(100vw/1200));
+        width: calc(300px + 150*(100vw/1200));
         height: calc(200px + 200*(100vw/1200));
 
     }
