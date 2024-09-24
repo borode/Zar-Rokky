@@ -2,11 +2,10 @@
     position: relative;
     height: max-content;
     min-height: 1100px;
+    max-height: 100%;
     width: 100%;
     background: rgba(22, 22, 22, 1);
-    -webkit-box-shadow: 0 0 40px 40px rgba(22, 22, 22, 1) inset;
-    -moz-box-shadow: 0 0 40px 40px rgba(22, 22, 22, 1) inset;
-    box-shadow: 0 0 40px 40px rgba(22, 22, 22, 1) inset;
+    box-shadow: -3px 3px 40px 40px rgba(22, 22, 22, 1) inset;
     padding: 100px 0 0 0;
 }
 
@@ -16,12 +15,14 @@
     left: 50%;
     max-width: 1920px;
     width: 100%;
+    max-height: 100%;
     transform: translate(-50%, 0);
 }
 
 .block_three_fon2{
     top: 100px;
     min-height: 100%;
+    max-height: 100%;
     width: 100%;
 }
 
@@ -33,6 +34,7 @@
     left: 0;
     z-index: 2;
     height: 100%;
+    max-height: 100%;
     width: 100%;
     background-size: cover;
     transform:translate(1%, -4%);
@@ -113,12 +115,11 @@
 .block_three_button{
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: flex-end ;
     z-index: 6;
-    gap: -10px;
-
 
 }
+
 
 .block_three_button_text{
     color: #FFFFFF;
@@ -148,16 +149,79 @@
 
 }
 
+.block_three_button_mobile{
+    display: none;
+    justify-content: center;
+    align-items: flex-end ;
+    z-index: 6;
+    padding: 0 0 50px 0;
+
+}
+
+.block_three_button_wrapper_mobile{
+    position: relative;
+    width: 400px;
+    height: 200px;
+    background-color: rgb(138, 97, 191);
+    background-size: cover;
+    border-radius: 10px;
+
+}
+
+.block_three_button_text_mobile{
+    color: #FFFFFF;
+    font-size:13px;
+    line-height: 1.2;
+    font-weight:700;
+    text-wrap: balance;
+    display: block;
+    height: 50px;
+    width: 220px;
+    position: absolute;
+    top: 30px;
+    right: 15px;
+}
+
+.block_three_button_vector_mobile{
+    color: #FFFFFF;
+    font-size:15px;
+    line-height: 1;
+    font-weight:700;
+    padding: 15px 50px 15px 50px;
+    text-wrap: nowrap;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 3px solid #FFFFFF;
+    border-radius: 5px;
+}
+
+.block_three_svg_one{
+    position: absolute;
+    top: 35px;
+    left: 70px;
+}
+
+.block_three_svg_two{
+    position: absolute;
+    top: 43px;
+    left: 80px;
+}
 
 @media (max-width: 992px) {
     .main_block_three{
         padding: 20px 0 0 0;
+        min-height: max-content;
     }
 
     .main_block_three_title{
         padding: 40px 0 40px 0;
     }
 
+    .block_three_cards_wrapper{
+        opacity: 1;
+    }
 
     .block_three_wrapper{
         display: grid;
@@ -189,5 +253,13 @@
         top: calc(250px + 50*(100vw/1200));
         font-size: calc(10px + 5*(100vw/1200));
         font-weight: 400;
+    }
+
+    .block_three_button{
+        display: none;
+    }
+
+    .block_three_button_mobile{
+          display: flex;
     }
 }
