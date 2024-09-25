@@ -221,7 +221,6 @@
 
 .block_three_cards_wrapper:hover .block_three_line {
     opacity: 1;
-    transition: 0.4s ease-in;
     display: block;
 }
 
@@ -279,7 +278,7 @@
           display: flex;
     }
 
-    .block_three_line{
+    .block_three_cards_wrapper:hover .block_three_line {
         display: none;
     }
 
