@@ -78,7 +78,6 @@
 .block_three_cards_wrapper:hover{
     opacity: 1;
     transition: 0.4s ease-in;
-
 }
 
 .block_three_image{
@@ -209,6 +208,23 @@
     left: 80px;
 }
 
+.block_three_line{
+    width: calc(130px + 100*(100vw/1200));
+    height: 10px;
+    border-radius: 5px;
+    background: #EF8B54;
+    z-index: 4;
+    display:none;
+    position: absolute;
+    bottom: -20px;
+}
+
+.block_three_cards_wrapper:hover .block_three_line {
+    opacity: 1;
+    transition: 0.4s ease-in;
+    display: block;
+}
+
 @media (max-width: 992px) {
     .main_block_three{
         padding: 20px 0 0 0;
@@ -262,4 +278,9 @@
     .block_three_button_mobile{
           display: flex;
     }
+
+    .block_three_line{
+        display: none;
+    }
+
 }

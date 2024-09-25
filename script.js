@@ -14,12 +14,6 @@ container.addEventListener('click', (e) => {
     }
 
 })
-
-
-
-
-
-
 // burger menu
 const burger = document.querySelector('.header_menu_link_burger');
 const menu = document.querySelector('.header_menu_burger');
@@ -80,8 +74,6 @@ overlay.addEventListener('click', (e) => {
         overlay.classList.remove('block_two_window_overlay--active');
     }
 })
-
-
 
 
 
