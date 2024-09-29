@@ -126,53 +126,96 @@
 
 .block_four_vector_wrapper_left{
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     position: absolute;
     bottom: 0;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%,0);
+
 }
 
-.block_four_vector_wrapper_position_left{
-    position: absolute;
-    bottom: 140px;
-    left:-60px;
-}
-
-.block_four_vector_wrapper_left_svg{
-    border: 3px solid #EF8B54;
-    width: 50px;
-    height: 50px;
-    padding: 10px;
+.block_four_vector_wrapper_left_line{
+    border: 3px solid  #EF8B54;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
+    position: absolute;
+    left: -90px;
+    bottom: 200px;
+}
+
+.block_four_vector_wrapper_left_line_one:after, .block_four_vector_wrapper_left_line_one:before{
+    content: " ";
+    width: 20px;
+    height: 4px;
+    background:  #EF8B54;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    border-radius: 20px;
+}
+
+.block_four_vector_wrapper_left_line_one:before{
+    transform: rotate(-45deg) translate(-25%, -20%);
+    bottom: 35px;
+    left: 20px;
+}
+
+.block_four_vector_wrapper_left_line_one:after{
+    transform: rotate(45deg) translate(-30%, -20%);
+    bottom: 15px;
+    left: 20px;
 }
 
 .block_four_vector_wrapper_right{
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     position: absolute;
     bottom: 0;
     left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.block_four_vector_wrapper_position_right{
-    position: absolute;
-    bottom: 215px;
-    left:60px;
-    transform: rotate(180deg);
+    transform: translate(-50%,0);
 
 }
 
-.block_four_vector_wrapper_right_svg{
-    border: 3px solid #EF8B54;
-    width: 50px;
-    height: 50px;
-    padding: 10px;
+.block_four_vector_wrapper_right_line{
+    border: 3px solid  #EF8B54;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
+    position: absolute;
+    left: 20px;
+    bottom: 200px;
 }
+
+.block_four_vector_wrapper_right_line:after, .block_four_vector_wrapper_right_line:before{
+    content: " ";
+    width: 20px;
+    height: 4px;
+    background:  #EF8B54;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    border-radius: 20px;
+}
+
+.block_four_vector_wrapper_right_line:before{
+    transform: rotate(45deg) translate(-25%, -20%);
+    bottom: 29px;
+    left: 22px;
+}
+
+.block_four_vector_wrapper_right_line:after{
+    transform: rotate(-45deg) translate(-30%, -20%);
+    bottom: 24px;
+    left: 24px;
+}
+
+
+
+
+
 
 
 
