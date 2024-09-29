@@ -48,6 +48,7 @@
     background: url("/img/background_gradient_block_two.png");
     position: absolute;
     background-repeat: no-repeat;
+    background-position: center;
     top: 0;
     left: 0;
     z-index: 2;

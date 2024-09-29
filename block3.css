@@ -37,7 +37,7 @@
     max-height: 100%;
     width: 100%;
     background-size: cover;
-    transform:translate(1%, -4%);
+    background-position: center;
 }
 
 .main_block_three_title{
@@ -61,7 +61,7 @@
     justify-content: center;
     align-items: center;
     column-gap: calc(3px + 15*(100vw/1200));
-    padding: 15px;
+    padding: 85px 15px 15px 15px;
 }
 
 .block_three_cards_wrapper{
@@ -254,7 +254,7 @@
     .block_three_background_gradient{
         background: url("/img/background_gradient_block_two2.png");
         background-size: cover;
-        transform:translate(1%, 1%);
+        background-position: center;
 
     }
 
