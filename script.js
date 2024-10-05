@@ -76,62 +76,62 @@ overlay.addEventListener('click', (e) => {
 })
 
 // slider block four
-// const vector = document.querySelector('.block_four_wrapper')
-// const arrow_left = document.querySelector('.block_four_vector_wrapper_left')
-// const arrow_right = document.querySelector('.block_four_vector_wrapper_right')
-// const slider_element_count = vector.children.length
-// let current_slider = 0
-// arrow_right.addEventListener('click', (e) => {
-//     console.log(e.target);
-//     if (current_slider == 0){
-//         current_slider ++
-//     }
-//         if (current_slider!= slider_element_count) {
-//             vector.style.transform = `translate(-${current_slider * 25}%,0)`
-//             current_slider ++
-//
-//         }
-//         else {
-//             vector.style.transform = `translate(0,0)`
-//             current_slider = 0
-//         }
-//
-// })
-// arrow_left.addEventListener('click', (e) => {
-//     console.log(e.target);
-//     console.log(current_slider,slider_element_count);
-//
-//         if (current_slider == slider_element_count){
-//             current_slider --
-//         }
-//     if (current_slider == 0) {
-//         vector.style.transform = `translate(-${(slider_element_count - 1) * 25}%,0)`
-//         current_slider = slider_element_count
-//         console.log(current_slider,slider_element_count);
-//
-//     }
-//     else {
-//         current_slider --
-//         vector.style.transform = `translate(-${current_slider * 25}%,0)`
-//     }
-//
-// })
+const vector = document.querySelector('.block_four_wrapper')
+const arrow_left = document.querySelector('.block_four_vector_wrapper_left')
+const arrow_right = document.querySelector('.block_four_vector_wrapper_right')
+const slider_element_count = vector.children.length
+let current_slider = 0
+arrow_right.addEventListener('click', (e) => {
+    console.log(e.target);
+    if (current_slider == 0){
+        current_slider ++
+    }
+        if (current_slider!= slider_element_count) {
+            vector.style.transform = `translate(-${current_slider * 25}%,0)`
+            current_slider ++
 
-const vector = document.querySelector('.block_four_wrapper');
-const arrow_left = document.querySelector('.block_four_vector_wrapper_left');
-const arrow_right = document.querySelector('.block_four_vector_wrapper_right');
-const slider_element_count = vector.children.length;
-let current_slider = 0;
+        }
+        else {
+            vector.style.transform = `translate(0,0)`
+            current_slider = 0
+        }
 
-arrow_right.addEventListener('click', () => {
-    current_slider = (current_slider + 1) % slider_element_count;
-    vector.style.transform = `translate(-${current_slider * 25}%, 0)`;
-});
+})
+arrow_left.addEventListener('click', (e) => {
+    console.log(e.target);
+    console.log(current_slider,slider_element_count);
 
-arrow_left.addEventListener('click', () => {
-    current_slider = (current_slider - 1 + slider_element_count) % slider_element_count;
-    vector.style.transform = `translate(-${current_slider * 25}%, 0)`;
-});
+        if (current_slider == slider_element_count){
+            current_slider --
+        }
+    if (current_slider == 0) {
+        vector.style.transform = `translate(-${(slider_element_count - 1) * 25}%,0)`
+        current_slider = slider_element_count
+        console.log(current_slider,slider_element_count);
+
+    }
+    else {
+        current_slider --
+        vector.style.transform = `translate(-${current_slider * 25}%,0)`
+    }
+
+})
+
+// const vector = document.querySelector('.block_four_wrapper');
+// const arrow_left = document.querySelector('.block_four_vector_wrapper_left');
+// const arrow_right = document.querySelector('.block_four_vector_wrapper_right');
+// const slider_element_count = vector.children.length;
+// let current_slider = 0;
+//
+// arrow_right.addEventListener('click', () => {
+//     current_slider = (current_slider + 1) % slider_element_count;
+//     vector.style.transform = `translate(-${current_slider * 25}%, 0)`;
+// });
+//
+// arrow_left.addEventListener('click', () => {
+//     current_slider = (current_slider - 1 + slider_element_count) % slider_element_count;
+//     vector.style.transform = `translate(-${current_slider * 25}%, 0)`;
+// });
 
 
 
