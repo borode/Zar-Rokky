@@ -5,7 +5,7 @@
     max-height: 100%;
     width: 100%;
     background: rgba(22, 22, 22, 1);
-    box-shadow: 0px 0px 10px 300px rgba(22, 22, 22, 1) inset;
+    box-shadow: 0px 0px 71px 100px rgba(22, 22, 22, 1) inset;
 }
 
 .background_wrapper_five{
@@ -75,12 +75,41 @@
     height: 100%;
 }
 
+.block_five_container{
+    position: relative;
+    z-index: 4;
+}
 
+.block_five_wrapper{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 
+.block_five_text_one{
+    position: absolute;
+    top: 200px;
+    left: 50px;
+    gap: 30px;
+}
 
+.block_five_text_one_text{
+    font-weight: 700;
+    font-size: calc(15px + 2*(100vw/1200));
+    line-height: 22px;
+    color: #FFFFFF;
 
+}
 
-
+.block_five_text_two_text{
+   position: absolute;
+    top: 50px;
+    left: 0;
+    font-weight: 700;
+    font-size: calc(15px + 15*(100vw/1200));
+    line-height: 50px;
+    color: #EF8B54;
+}
 
 
 
