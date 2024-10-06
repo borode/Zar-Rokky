@@ -61,18 +61,19 @@
     justify-content: center;
     align-items: center;
     column-gap: calc(3px + 15*(100vw/1200));
-    padding: 85px 15px 15px 15px;
+    padding: 85px 0 15px 0;
 }
 
 .block_three_cards_wrapper{
     z-index: 4;
-    padding: 20px 20px 110px 20px;
+    padding: 20px 20px 30px 20px;
     background-color: rgba(20, 20, 20, 0.6) ;
     position: relative;
     display: flex;
     justify-content:center ;
-    align-items: center;
+    flex-direction: column;
     opacity: 0.5;
+
 }
 
 .block_three_cards_wrapper:hover{
@@ -85,67 +86,60 @@
     min-width: 150px;
     width: calc(100px + 100*(100vw/1200));
     height: calc(150px + 100*(100vw/1200));
-
+    margin: 0 auto;
 }
 
 .block_three_text_up{
-    position: absolute;
-    top: calc(70px + 5*(100vw/1200));
-    left: calc(20px + 3*(100vw/1200));
+    padding: 30px 0 0 0 ;
     font-size: calc(10px + 5*(100vw/1200));
-    line-height: 31;
     font-weight: 400;
     color: #FFFFFF;
     text-wrap: nowrap;
-
+    text-align: left;
 }
 
 .block_three_text_down{
-    position: absolute;
-    top: calc(200px + 30*(100vw/1200));
-    left: calc(20px + 3*(100vw/1200));
+    padding: 20px 0 0 0 ;
     font-size: calc(5px + 5*(100vw/1200));
-    line-height: 21;
     font-weight: 100;
     color: #FFFFFF;
     text-wrap: nowrap;
+    text-align: left;
 }
 
 .block_three_button{
     display: flex;
     justify-content: center;
     align-items: flex-end ;
+    position: relative;
     z-index: 6;
-
+    padding: 50px 0 0 0 ;
 }
 
+.block_three_button_wrapper{
+    background-color: rgba(94, 56, 158, 0.35) ;
+    min-height: max-content;
+    display: flex;
+
+}
 
 .block_three_button_text{
     color: #FFFFFF;
     font-size:calc(8px + 5*(100vw/1200));
-    line-height: 30;
     font-weight:400;
     text-wrap: nowrap;
-    background-color: rgba(94, 56, 158, 0.35) ;
     padding: 20px 80px 20px 30px;
 }
 
 .block_three_button_vector{
-    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
     color: #FFFFFF;
     font-size:calc(8px + 5*(100vw/1200));
-    line-height: 22;
     font-weight:400;
     background-color: rgba(80, 56, 111, 1) ;
-    padding: 20px 60px 20px 25px;
-    left: -20px;
-}
-
-.block_three_button_type{
-    position: absolute;
-    top: 24px;
-    right: 20px;
-
+    padding: 20px 20px 20px 25px;
 }
 
 .block_three_button_mobile{
@@ -158,58 +152,54 @@
 }
 
 .block_three_button_wrapper_mobile{
-    position: relative;
-    width: 400px;
-    height: 200px;
     background-color: rgb(138, 97, 191);
     background-size: cover;
     border-radius: 10px;
-
+    padding: 50px 20px;
+    height: max-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
 }
 
 .block_three_button_text_mobile{
     color: #FFFFFF;
-    font-size:13px;
-    line-height: 1.2;
+    font-size:18px;
     font-weight:700;
     text-wrap: balance;
     display: block;
-    height: 50px;
-    width: 220px;
-    position: absolute;
-    top: 30px;
-    right: 15px;
+
+
+}
+
+.block_three_svg{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.block_three_svg_mobile{
+    width: 150px;
+
 }
 
 .block_three_button_vector_mobile{
     color: #FFFFFF;
-    font-size:15px;
-    line-height: 1;
+    font-size:20px;
     font-weight:700;
-    padding: 15px 50px 15px 50px;
+    padding: 15px 50px ;
     text-wrap: nowrap;
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translate(-50%, -50%);
     border: 3px solid #FFFFFF;
     border-radius: 5px;
-}
-
-.block_three_svg_one{
-    position: absolute;
-    top: 35px;
-    left: 70px;
-}
-
-.block_three_svg_two{
-    position: absolute;
-    top: 43px;
-    left: 80px;
+    background: none;
+    width: 100%;
 }
 
 .block_three_line{
-    width: calc(130px + 100*(100vw/1200));
+    width: 90%;
     height: 10px;
     border-radius: 5px;
     background: #EF8B54;
@@ -217,6 +207,8 @@
     display:none;
     position: absolute;
     bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .block_three_cards_wrapper:hover .block_three_line {
@@ -248,7 +240,7 @@
     .block_three_image{
         width: calc(300px + 150*(100vw/1200));
         height: calc(200px + 200*(100vw/1200));
-
+        max-width: 100%;
     }
 
     .block_three_background_gradient{
