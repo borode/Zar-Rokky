@@ -184,23 +184,36 @@
     flex-direction:column;
     justify-content: center;
     align-items: center;
-    gap: 50px;
-    padding: 40px 40px ;
+    gap: 30px;
+    padding: 40px;
 }
 
 .block_five_label_name{
+    border: 1px solid #c1bfbd;
     background-color: rgba(246, 246, 246, 1);
-    /*padding: 10px;*/
     width: 300px;
     height: 50px;
+    padding: 0 0 0 10px;
 }
 
-/*input[type="text"]{*/
-/*    width: 100%;*/
-/*}*/
+.block_five_label_name::placeholder{
+    font-size: 15px;
+    font-weight: 400;
+    color: black;
+}
 
 .block_five_label_number{
+    border: 1px solid #c1bfbd;
+    background-color: rgba(246, 246, 246, 1);
+    width: 300px;
+    height: 50px;
+    padding: 0 0 0 10px;
+}
 
+.block_five_label_number::placeholder{
+    font-size: 15px;
+    font-weight: 400;
+    color: black;
 }
 
 input[type="number"]::-webkit-outer-spin-button,
@@ -215,11 +228,36 @@ input[type="number"]:focus {
     -moz-appearance: textfield;
 }
 
-.textarea::placeholder{
-    font-size: 15px;
-    padding:10px;
+textarea{
+    border: 1px solid #c1bfbd;
+    background-color: rgba(246, 246, 246, 1);
+    width: 300px;
+    height: 90px;
+    padding: 5px 0 0 10px;
+    overflow: hidden;
+    resize: none;
 }
 
+textarea::placeholder{
+    font-size: 15px;
+    font-weight: 400;
+    color: black;
+}
+
+.block_five_confirm{
+    width: 250px;
+    height: 50px;
+    margin:0 0 0 50px;
+}
+
+.block_five_button{
+    background-color: #EF8B54;
+    width: 300px;
+    height: 50px;
+    font-size: 18px;
+    font-weight:600 ;
+    color: #FFFFFF;
+}
 
 
 

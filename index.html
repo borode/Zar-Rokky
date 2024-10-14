@@ -677,25 +677,28 @@
                 </div>
                 <div class="block_five_form">
                     <form  class="block_five_form_wrapper" autocomplete="off" action='' method="get">
-                        <label  >
+                        <label>
                             <input class="block_five_label_name"
+                                   minlength="2"
+                                   maxlength="30"
                                     type="text"
                                     name="name"
                                     placeholder="Имя">
                         </label>
-                        <label class="block_five_label_number" >
-                            <input
-                                    minlength="11"
-                                    maxlength="11"
+                        <label>
+                            <input class="block_five_label_number"
                                     type="number"
-                                    name="usernumber"
-                                    placeholder="+7 (000) 000-00-00">
+                                    name="number"
+                                    placeholder="+7 (000) 000-00-00"
+                                   minlength="11"
+                                   maxlength="11"
+                                   oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
                         </label>
                         <label class="block_five_label_comment">
-                        <textarea name="comment" placeholder="Расскажите о своей задаче"></textarea>
+                        <textarea minlength="0" maxlength="600" name="comment" placeholder="Расскажите о своей задаче"></textarea>
                         </label>
-                        <span class="block_five_confirm">Нажимая на кнопку "Отправить", я даю согласие на обработку персональных данных.</span>
-
+<!--                        <input class="block_five_label_checkbox" type="checkbox"/>-->
+                        <span class="block_five_confirm"> Нажимая на кнопку "Отправить", я даю согласие на обработку персональных данных.</span>
                         <button class="block_five_button" type="submit">
                             Отправить
                         </button>
