@@ -117,6 +117,7 @@ arrow_left.addEventListener('click', (e) => {
 
 })
 
+// slider block four v.2
 // const vector = document.querySelector('.block_four_wrapper');
 // const arrow_left = document.querySelector('.block_four_vector_wrapper_left');
 // const arrow_right = document.querySelector('.block_four_vector_wrapper_right');
@@ -133,14 +134,17 @@ arrow_left.addEventListener('click', (e) => {
 //     vector.style.transform = `translate(-${current_slider * 25}%, 0)`;
 // });
 
-const confim = document.querySelector('.block_five_confirm');
-const checkbox = document.querySelector('.block_five_checkbox');
-confim.addEventListener('click', (e) => {
-    console.log(e.target);
-    if (e.target.closest('.block_five_checkbox')) {
-        checkbox.classList.toggle('block_five_checkbox--active');
 
-    }
+
+
+// const confim = document.querySelector('.block_five_confirm');
+// const checkbox = document.querySelector('.block_five_checkbox');
+// confim.addEventListener('click', (e) => {
+//     console.log(e.target);
+//     if (e.target.closest('.block_five_checkbox')) {
+//         checkbox.classList.toggle('block_five_checkbox--active');
+//
+//     }
     // confim.addEventListener('click', (e) => {
     //     console.log(e.target);
     //     if (e.target.classList.contains('block_five_checkbox')){
@@ -148,7 +152,7 @@ confim.addEventListener('click', (e) => {
     //
     //     }
     // })
-})
+// })
 
 
 

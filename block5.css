@@ -88,10 +88,6 @@
     width: 50%;
 }
 
-.block_five_text_one{
-
-}
-
 .block_five_text_one_text{
     font-weight: 700;
     font-size: calc(15px + 2*(100vw/1200));
@@ -121,6 +117,7 @@
     color:  #FFFFFF;
     text-wrap: nowrap;
     padding:0 0  30px 0 ;
+    position: relative;
 }
 
 .block_five_text_ol{
@@ -136,6 +133,7 @@
     font-size: 15px;
     color:  #FFFFFF;
     text-wrap: nowrap;
+    position: relative;
 }
 
 .block_five_text_border_down:after, .block_five_text_border_down:before{
@@ -149,13 +147,13 @@
 
 .block_five_text_border_down:after{
     transform: rotate(90deg) translate(7px, 1px) ;
-    left: 28px;
+    left: -25px;
 
 }
 
 .block_five_text_border_down:before{
     transform:translate(-10%, 7px);
-    left: 28px;
+    left: -25px;
 }
 
 .block_five_text_border_up:after, .block_five_text_border_up:before{
@@ -168,13 +166,13 @@
 
 .block_five_text_border_up:after{
     transform: rotate(90deg) ;
-    left: 28px;
-    bottom: 170px;
+    left: -25px;
+    top: 11px;
 }
 
 .block_five_text_border_up:before{
-    left: 28px;
-    bottom: 170px;
+    left: -25px;
+    top: 11px;
 }
 
 .block_five_form{
@@ -262,6 +260,7 @@ textarea::placeholder{
     width: 250px;
     height: 50px;
     margin: 0 0 0 20px;
+    color: #000000;
 }
 
 .block_five_checkbox{
@@ -275,7 +274,7 @@ textarea::placeholder{
 }
 
 .block_five_checkbox:after{
-    /*content: " ";*/
+    content: " ";
     width: 15px;
     height: 3px;
     background: #EF8B54;
@@ -286,7 +285,7 @@ textarea::placeholder{
 }
 
 .block_five_checkbox:before{
-    /*content: " ";*/
+    content: " ";
     width: 8px;
     height: 3px;
     background: #EF8B54;
@@ -295,7 +294,6 @@ textarea::placeholder{
     top: 50%;
     border-radius: 2px;
 }
-
 
 .block_five_checkbox:after{
     transform: rotate(-45deg) translate(-10%, -10%);
@@ -307,11 +305,6 @@ textarea::placeholder{
     transform: rotate(45deg) translate(-10%, -20%);
     left: 2px;
     top:11px ;
-}
-
-.block_five_checkbox--active{
-    /*display: block;*/
-    content: " ";
 }
 
 /*.block_five_checkbox:after:checked{*/
@@ -331,15 +324,50 @@ textarea::placeholder{
     font-size: 18px;
     font-weight:600 ;
     color: #FFFFFF;
+    -webkit-box-shadow: 1px 3px 25px 8px rgba(239, 139, 84, 0.9);
+    -moz-box-shadow: 1px 3px 25px 8px rgba(239, 139, 84, 0.9);
+    box-shadow: 1px 3px 25px 8px rgba(239, 139, 84, 0.9);
 }
 
+.block_five_text_one_text_mobile{
+    font-weight: 700;
+    font-size: calc(15px + 2*(100vw/1200));
+    color: #FFFFFF;
+}
 
+@media (max-width: 992px) {
+    .block_five_container{
+        justify-content: center;
+        flex-direction: column;
+        padding: 70px 0 70px 0;
+    }
+    .block_five_text_one_text_mobile{
+        line-height: 20px;
+    }
+    .block_five_text_mobile{
+        padding: 30px 0 50px  0;
+    }
+    .block_five_text_one_text{
+        display: none;
+    }
+    .block_five_text_two_text{
+        line-height: 30px;
+        padding: 30px 0 30px 0;
+    }
+    .block_five_form{
+        margin: 0;
+        background-color: rgba(255, 255, 255, 0.4);
+    }
+    .block_five_confirm_text{
+        color: #FFFFFF;
+    }
+}
 
-
-
-
-
-
+@media (min-width: 992px) {
+    .block_five_text_one_text_mobile{
+        display: none;
+    }
+}
 
 
 
