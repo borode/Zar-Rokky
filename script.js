@@ -133,7 +133,22 @@ arrow_left.addEventListener('click', (e) => {
 //     vector.style.transform = `translate(-${current_slider * 25}%, 0)`;
 // });
 
+const confim = document.querySelector('.block_five_confirm');
+const checkbox = document.querySelector('.block_five_checkbox');
+confim.addEventListener('click', (e) => {
+    console.log(e.target);
+    if (e.target.closest('.block_five_checkbox')) {
+        checkbox.classList.toggle('block_five_checkbox--active');
 
+    }
+    // confim.addEventListener('click', (e) => {
+    //     console.log(e.target);
+    //     if (e.target.classList.contains('block_five_checkbox')){
+    //         checkbox.classList.remove('block_five_checkbox:after');
+    //
+    //     }
+    // })
+})
 
 
 

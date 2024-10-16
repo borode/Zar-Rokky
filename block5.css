@@ -275,7 +275,7 @@ textarea::placeholder{
 }
 
 .block_five_checkbox:after{
-    content: " ";
+    /*content: " ";*/
     width: 15px;
     height: 3px;
     background: #EF8B54;
@@ -286,7 +286,7 @@ textarea::placeholder{
 }
 
 .block_five_checkbox:before{
-    content: " ";
+    /*content: " ";*/
     width: 8px;
     height: 3px;
     background: #EF8B54;
@@ -307,6 +307,11 @@ textarea::placeholder{
     transform: rotate(45deg) translate(-10%, -20%);
     left: 2px;
     top:11px ;
+}
+
+.block_five_checkbox--active{
+    /*display: block;*/
+    content: " ";
 }
 
 /*.block_five_checkbox:after:checked{*/
