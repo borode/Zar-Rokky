@@ -273,7 +273,7 @@ textarea::placeholder{
     margin: 0 0 20px 0 ;
 }
 
-.block_five_checkbox:after{
+.block_five_checkbox--active:after{
     content: " ";
     width: 15px;
     height: 3px;
@@ -284,7 +284,7 @@ textarea::placeholder{
     border-radius: 2px;
 }
 
-.block_five_checkbox:before{
+.block_five_checkbox--active:before{
     content: " ";
     width: 8px;
     height: 3px;
@@ -295,27 +295,17 @@ textarea::placeholder{
     border-radius: 2px;
 }
 
-.block_five_checkbox:after{
+.block_five_checkbox--active:after{
     transform: rotate(-45deg) translate(-10%, -10%);
     left: 7px;
     top:8px ;
 }
 
-.block_five_checkbox:before{
+.block_five_checkbox--active:before{
     transform: rotate(45deg) translate(-10%, -20%);
     left: 2px;
     top:11px ;
 }
-
-/*.block_five_checkbox:after:checked{*/
-/*    !*visibility: hidden;*!*/
-/*    display: none;*/
-/*}*/
-
-/*.block_five_checkbox:before:checked{*/
-/*    !*visibility: hidden;*!*/
-/*    display: none;*/
-/*}*/
 
 .block_five_button{
     background-color: #EF8B54;
