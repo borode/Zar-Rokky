@@ -134,16 +134,56 @@ arrow_left.addEventListener('click', (e) => {
 //     vector.style.transform = `translate(-${current_slider * 25}%, 0)`;
 // });
 
-
+// apryv form
 const confim = document.querySelector('.block_five_confirm');
 const checkbox = document.querySelector('.block_five_checkbox');
+const checkbox_remove = document.querySelector('.block_five_checkbox--active');
 confim.addEventListener('click', (e) => {
     console.log(e.target);
     if (e.target.closest('.block_five_checkbox')) {
         checkbox.classList.toggle('block_five_checkbox--active');
 
     }
+    if (e.target.closest('.block_five_checkbox--active')) {
+        checkbox_remove.classList.remove('block_five_checkbox--active');
+    }
 })
+
+// valid form
+const formElement = document.querySelector('form')
+formElement.addEventListener('submit', (event) => {
+    event.preventDefault()
+
+    const formData = new FormData(formElement)
+
+
+
+    console.log( Object.fromEntries(formData) )
+})
+
+const NameInputElement = formElement.name
+const NumberInputElement = formElement.number
+
+NameInputElement.type = 'text'
+
+NumberInputElement.type = 'number'
+document.getElementById('number').addEventListener('input', function() {
+    var maxLength = 11;
+    var minLength = 11;
+    if(this.value.length > maxLength) {
+        this.value = this.value.substring(0, maxLength);
+    }
+    if(this.value.length < minLength) {
+        this.value = this.value.substring(0, minLength);
+    }
+
+})
+// NumberInputElement.minlength = '11'
+// NumberInputElement.maxlength = '11'
+// if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);
+
+
+
 
 
 
