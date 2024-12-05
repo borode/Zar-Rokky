@@ -682,10 +682,9 @@
                     </div>
                 </div>
                 <div class="block_five_form">
-                    <form id="callbackForm" action="/callback"  class="block_five_form_wrapper" autocomplete="off" method="post"  data-js-form>
-                        <p class="field">
-                            <label>
-                                <input class="block_five_label_name"
+                    <form id="callbackForm" action="/callback"  class="block_five_form_wrapper" autocomplete="off" method="post" >
+                        <label>
+                            <input class="block_five_label_name"
                                        minlength="2"
                                        maxlength="30"
                                        type="text"
@@ -693,26 +692,17 @@
                                        name="name"
                                        placeholder="Имя"
                                        required
-                                       aria-errormessage="name-errors"
-                                       title="Поля обязательны для заполнения от 2 символов"
-                                >
-                            </label>
-                            <span class="field_errors" id="name-errors" data-js-form-field-errors></span>
-                        </p>
-                        <p class="field">
-                            <label>
-                                <input class="block_five_label_number"
+                            >
+                        </label>
+                        <label>
+                            <input class="block_five_label_number"
                                        required
                                        id="number"
                                        name="number"
                                        type="number"
                                        placeholder="+7 (000) 000-00-00"
-                                       aria-errormessage="number-errors"
-
-                                >
-                            </label>
-                            <span class="field_errors" id="number-errors" data-js-form-field-errors></span>
-                        </p>
+                            >
+                        </label>
                         <label class="block_five_label_comment">
                         <textarea minlength="0" maxlength="600" name="comment" placeholder="Расскажите о своей задаче"></textarea>
                         </label>

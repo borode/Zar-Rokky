@@ -144,9 +144,9 @@ confim.addEventListener('click', (e) => {
         checkbox.classList.toggle('block_five_checkbox--active');
 
     }
-    if (e.target.closest('.block_five_checkbox--active')) {
-        checkbox_remove.classList.remove('block_five_checkbox--active');
-    }
+    // if (e.target.closest('.block_five_checkbox--active')) {
+    //     checkbox_remove.classList.remove('block_five_checkbox--active');
+    // }
 })
 
 // valid form
@@ -174,120 +174,9 @@ input_number.addEventListener('input', function () {
     if (this.value.length > 11) {
         this.value = this.value.slice(0,11);
     }
-//     let value = this.value.replace(/\D/g,'');
-//     let format = '(XXX) XXX-XX-XX';
-//     let i = 0;
-//     let formattedValue = format.replace(/X/g,function() {
-//         return value.charAt(i++) ||'';
-//     });
-//     this.value = formattedValue;
+
 });
-//
-//
-//
-// class FormsValidation {
-//     selectors = {
-//         form: '[data-js-form]',
-//         fieldErrors: '[data-js-form-field-errors]'
-//     }
-//
-//     errorMessages = {
-//         valueMissing: () => 'Пожалуйста, заполните это поле',
-//         patternMismatch: ({ title }) => title || 'Данные не соответствуют формату',
-//         tooShort: ({ minLength }) => `Слишком короткое значение, минимум символов — ${minLength}`,
-//         tooLong: ({ maxLength }) => `Слишком длинное значение, ограничение символов — ${maxLength}`,
-//     }
-//
-//     constructor() {
-//         this.bindEvents()
-//     }
-//
-//     manageErrors(fieldControlElement, errorMessages) {
-//         const fieldErrorsElement = fieldControlElement.parentElement.querySelector(this.selectors.fieldErrors)
-//
-//         fieldErrorsElement.innerHTML = errorMessages
-//             .map((message) => `<span class="field__error">${message}</span>`)
-//             .join('')
-//     }
-//
-//     validateField(block_five_label_nameElement) {
-//         const errors = block_five_label_nameElement.validity
-//         const errorMessages = []
-//
-//         Object.entries(this.errorMessages).forEach(([errorType, getErrorMessage]) => {
-//             if (errors[errorType]) {
-//                 errorMessages.push(getErrorMessage(block_five_label_nameElement))
-//             }
-//         })
-//
-//
-//         this.manageErrors(block_five_label_nameElement, errorMessages)
-//
-//         const isValid = errorMessages.length === 0
-//
-//         block_five_label_nameElement.ariaInvalid = !isValid
-//
-//         return isValid
-//     }
-//
-//     onBlur(event) {
-//         const { target } = event
-//         const isFormField = target.closest(this.selectors.form)
-//         const isRequired = target.required
-//
-//         if (isFormField && isRequired) {
-//             this.validateField(target)
-//         }
-//     }
-//
-//     onChange(event) {
-//         const { target } = event
-//         const isRequired = target.required
-//         const isToggleType = ['radio', 'checkbox'].includes(target.type)
-//
-//         if (isToggleType && isRequired) {
-//             this.validateField(target)
-//         }
-//     }
-//
-//     onSubmit(event) {
-//         const isFormElement = event.target.matches(this.selectors.form)
-//         if (!isFormElement) {
-//             return
-//         }
-//
-//         const requiredControlElements = [...event.target.elements].filter(({ required }) => required)
-//         let isFormValid = true
-//         let firstInvalidFieldControl = null
-//
-//         requiredControlElements.forEach((element) => {
-//             const isFieldValid = this.validateField(element)
-//
-//             if (!isFieldValid) {
-//                 isFormValid = false
-//
-//                 if (!firstInvalidFieldControl) {
-//                     firstInvalidFieldControl = element
-//                 }
-//             }
-//         })
-//
-//         if (!isFormValid) {
-//             event.preventDefault()
-//             firstInvalidFieldControl.focus()
-//         }
-//     }
-//
-//     bindEvents() {
-//         document.addEventListener('blur', (event) => {
-//             this.onBlur(event)
-//         }, { capture: true })
-//         document.addEventListener('change', (event) => this.onChange(event))
-//         document.addEventListener('submit', (event) => this.onSubmit(event))
-//     }
-// }
-//
-// new FormsValidation()
+
 
 
 
