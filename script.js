@@ -137,16 +137,11 @@ arrow_left.addEventListener('click', (e) => {
 // apryv form
 const confim = document.querySelector('.block_five_confirm');
 const checkbox = document.querySelector('.block_five_checkbox');
-const checkbox_remove = document.querySelector('.block_five_checkbox--active');
 confim.addEventListener('click', (e) => {
     console.log(e.target);
     if (e.target.closest('.block_five_checkbox')) {
         checkbox.classList.toggle('block_five_checkbox--active');
-
     }
-    // if (e.target.closest('.block_five_checkbox--active')) {
-    //     checkbox_remove.classList.remove('block_five_checkbox--active');
-    // }
 })
 
 // valid form

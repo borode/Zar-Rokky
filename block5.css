@@ -307,6 +307,40 @@ textarea::placeholder{
     top:11px ;
 }
 
+/*.block_five_checkbox_one--active:after{*/
+/*    content: " ";*/
+/*    width: 15px;*/
+/*    height: 3px;*/
+/*    background: #EF8B54;*/
+/*    position: absolute;*/
+/*    left: 50%;*/
+/*    top: 50%;*/
+/*    border-radius: 2px;*/
+/*}*/
+
+/*.block_five_checkbox_one--active:before{*/
+/*    content: " ";*/
+/*    width: 8px;*/
+/*    height: 3px;*/
+/*    background: #EF8B54;*/
+/*    position: absolute;*/
+/*    left: 50%;*/
+/*    top: 50%;*/
+/*    border-radius: 2px;*/
+/*}*/
+
+/*.block_five_checkbox_one--active:after{*/
+/*    transform: rotate(-45deg) translate(-10%, -10%);*/
+/*    left: 7px;*/
+/*    top:8px ;*/
+/*}*/
+
+/*.block_five_checkbox_one--active:before{*/
+/*    transform: rotate(45deg) translate(-10%, -20%);*/
+/*    left: 2px;*/
+/*    top:11px ;*/
+/*}*/
+
 .block_five_button{
     background-color: #EF8B54;
     width: 300px;
